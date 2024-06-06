@@ -21,5 +21,10 @@ If several words are used to form the name of the class, each inner words first 
 The method main() is the main entry point into a java program: this is where the processing starts. 
 All the methods names should start with a lowercase letter.
 If several words are used to form the name of the method, then each first letter of the inner word should be i uppercase.
-Identifiers
+Identifiers are the names of local variables, instance and class variables, and labels, but also the names for classes, packages, modules and methods. All unicode characters are valid, not just the ASCII subset.
+All Identifiers can begin with a letter, a  currency symbol or an underscore. According to the convention, a letter should be lower case for variables. 
+Identifiers are case-sensitive and keywords cannot be used as identifiers as they are reserved words and contain special meanings.
 
+# Decision Structures in Java
+# If statements
+Programs 
