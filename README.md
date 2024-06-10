@@ -36,3 +36,25 @@ A decision structure called an if-else statement enables a computer to follow on
 This code determines if the user's quota was reached. They were told if they did. If not, they are informed of the number of sales they missed.
 The quota is originally initialized to 10 by the code. Next, it inquires about the user's weekly sales total. It then determines whether the sales are higher.
 
+### If-else-if statements\
+Imagine you're at school and you just took a test. The teacher is going to give you a grade, and there are 5 different grades you can get: A, B, C, D, or F.
+The teacher is going to use a special tool called an "if-else-if statement" to figure out what grade to give you.
+First, the teacher checks if your score is less than 60. If it is, they'll give you an F.
+If your score is not less than 60, the teacher checks if it's less than 70. If it is, they'll give you a D.
+If your score is not less than 70, the teacher checks if it's less than 80. If it is, they'll give you a C.
+If your score is not less than 80, the teacher checks if it's less than 90. If it is, they'll give you a B.
+If your score is not less than 90, the teacher will give you an A.
+This "if-else-if" tool helps the teacher look at all the different possible scores and decide which grade is the right one for you. It's kind of like a big decision tree, with different branches for each possible grade.
+
+### Switch statements
+Imagine you're at school and the teacher asks you to tell them your grade. You look at your paper and see you got a letter grade, like an A, B, C, D, or F.
+The teacher is going to use a special tool called a "switch statement" to figure out what message to give you based on your grade.
+First, the teacher takes the grade you gave them and puts it in a special "grade" box.
+Then, the teacher says, "Okay, let's see what message we should give based on the grade in this box."
+The teacher starts going through a list of different "cases" - one for each possible grade (A, B, C, D, F).
+For example, if the grade in the box is an 'A', the teacher says, "Aha, in the case of an 'A', we'll give the message 'Excellent job!'"
+The teacher writes that message in another special "message" box.
+If the grade is a 'B', 'C', 'D', or 'F', the teacher has different messages for each of those cases.
+The cool thing is, the teacher only does the message for the one case that matches your grade. They don't have to check all the other cases.
+But what if you put in something weird, like a 'Z'? The teacher has a special "default" case for that, where they can give a message like "I don't understand that grade."
+So the "switch statement" is like a big decision tree that helps the teacher figure out the right message to give you based on your grade. It's a really helpful tool for the teacher!
