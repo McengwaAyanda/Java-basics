@@ -81,3 +81,44 @@ Another neat thing is, if the teacher wants the same message for two different g
 The teacher can also do more than just assign a message - they can run a whole little program inside each case if they need to.
 So the "switch expression" is like a super-powered version of the regular "switch statement" that the teacher can use to make their job a lot easier. It's a really handy tool!
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/8c81cd83-cb4c-47cd-9367-42a76e46dc92)
+
+### Relational Operators
+Relational operators are like super-special tools that help us figure out if something is bigger, smaller, or the same as something else. They're kind of like the tools a builder uses to measure things.
+There are 6 different relational operators, and each one has a special symbol:
+1. Greater Than (>): This one checks if the number on the left is bigger than the number on the right. For example, if we ask "Is 5 greater than 3?" the answer is yes, because 5 is bigger than 3.
+2. Less Than (<): This one checks if the number on the left is smaller than the number on the right. For example, if we ask "Is 2 less than 7?" the answer is yes, because 2 is smaller than 7.
+3. Greater Than or Equal To (>=): This one checks if the number on the left is bigger than or the same as the number on the right. For example, if we ask "Is 4 greater than or equal to 4?" the answer is yes, because 4 is the same as 4.
+4. Less Than or Equal To (<=): This one checks if the number on the left is smaller than or the same as the number on the right. For example, if we ask "Is 6 less than or equal to 10?" the answer is yes, because 6 is smaller than 10.
+5. Equal To (==): This one checks if the two things are exactly the same. For example, if we ask "Is 3 equal to 3?" the answer is yes, because they are the same number.
+6. Not Equal To (!=): This one checks if the two things are not the same. For example, if we ask "Is 5 not equal to 7?" the answer is yes, because 5 and 7 are different numbers.
+These relational operators are super helpful when we need to make decisions, like if we should give someone a reward or not. They help us figure out if something is bigger, smaller, or the same as something else.
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/f93fca54-b91d-4a6b-b47b-84ffea70c7ce)
+
+### Logical Operators
+These are the special tools that help us make complex decisions in Java.
+Imagine you're a boss, and you need to decide if someone qualifies for a loan. To qualify, they need to meet two requirements:
+1. Earn at least $30,000 per year
+2. Have worked at their current job for at least 2 years
+You can't just look at one condition - you need to check both. That's where logical operators come in!
+There are three main logical operators in Java:
+1. AND (&&): This operator checks if BOTH conditions are true. So, if the person earns $30,000 AND has worked for 2 years, they qualify.
+2. OR (||): This operator checks if at least ONE of the conditions is true. So, if the person earns $30,000 OR has worked for 2 years, they qualify.
+3. NOT (!): This operator flips the truth of a single condition. So, if the person DOES NOT earn $30,000, they don't qualify.
+Let's look at some examples:
+AND (&&):
+- If one condition is true (e.g., earns $30,000) and the other is true (e.g., worked for 2 years), the whole expression is true.
+- If one condition is false (e.g., earns $25,000) and the other is true (e.g., worked for 2 years), the whole expression is false.
+OR (||):
+- If one condition is true (e.g., earns $30,000) and the other is false (e.g., worked for 1 year), the whole expression is true.
+- If both conditions are false (e.g., earns $25,000 and worked for 1 year), the whole expression is false.
+NOT (!):
+- If the condition is true (e.g., earns $30,000), the NOT operator makes it false.
+- If the condition is false (e.g., earns $25,000), the NOT operator makes it true.
+These logical operators are super helpful when you need to make complex decisions in your code. You can combine them to create even more intricate conditions, like "Earn at least $30,000 AND have worked for at least 2 years, OR have a college degree."
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/5cb154c6-1bb0-45f1-9c7a-954be3687468)
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/b8baffcd-5d6c-4cbd-ab60-d5c96e1c50db)
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/d1baa631-364a-4d1b-8447-c7c884ee11b9)
+
+
+
+
