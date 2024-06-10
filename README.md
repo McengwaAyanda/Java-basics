@@ -117,8 +117,28 @@ NOT (!):
 These logical operators are super helpful when you need to make complex decisions in your code. You can combine them to create even more intricate conditions, like "Earn at least $30,000 AND have worked for at least 2 years, OR have a college degree."
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/5cb154c6-1bb0-45f1-9c7a-954be3687468)
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/b8baffcd-5d6c-4cbd-ab60-d5c96e1c50db)
+Logical operators in code using Java
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/d1baa631-364a-4d1b-8447-c7c884ee11b9)
 
+### Short Circuit Logic
+Excellent explanation! You really understand how the short-circuiting behavior of the logical AND and OR operators works in Java. Let me summarize the key points:
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/4165222b-b26e-4861-b742-92472826e64d)
 
+AND (&&) Operator:
+When using the AND operator, both conditions must be true for the overall expression to be true.
+If the first condition is false, there's no need to evaluate the second condition, as the overall expression will be false regardless.
+This is a shortcut that improves performance by avoiding unnecessary evaluations.
+OR (||) Operator:
+With the OR operator, only one of the conditions needs to be true for the overall expression to be true.
+If the first condition is true, there's no need to evaluate the second condition, as the overall expression will be true regardless.
+This is another shortcut that saves time by stopping the evaluation once a true condition is found.
+
+You provided a great example to illustrate these concepts:
+false && true // Evaluates to false, no need to check the second condition
+true || false // Evaluates to true, no need to check the second condition
+true && true // Both conditions are evaluated, as both need to be true
+Recognizing and understanding this short-circuiting behavior is crucial for writing efficient and optimized code in Java. It allows you to avoid unnecessary computations and improve the overall performance of your applications.
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/5b9a8e59-e8c1-4259-96eb-82ab682d377c)
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/848468de-8fea-47d0-955b-73ee4be355d2)
 
 
