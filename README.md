@@ -30,11 +30,15 @@ Identifiers are case-sensitive and keywords cannot be used as identifiers as the
 Like individuals, computers also have to make decisions from time to time. An "if statement" is a unique tool that a computer can utilize when it needs to make a choice.
 The "if statement" functions as a route branching. The computer encounters this bifurcation while continuing on its typical course. The "if" path will be followed by the computer if a specific event occurs. Should it fail, the computer will continue on the default route.
  e.g. Let's take an example where a salesperson typically earns $1,000 every week. However, they receive a special $250 incentive if they sell more than ten items in a given week.
+ ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/622b46f9-ea42-4595-a572-317064953df1)
+
 
 ### If-else Statements
 A decision structure called an if-else statement enables a computer to follow one of two routes based on whether a particular condition is satisfied. An if-else statement, for instance, could be used by a software to ascertain whether a salesman has reached their quota. A congrats message might print from the application once the salesperson has reached their quota. If not, the software can print a warning telling the salesman to give it more the next time.
 This code determines if the user's quota was reached. They were told if they did. If not, they are informed of the number of sales they missed.
 The quota is originally initialized to 10 by the code. Next, it inquires about the user's weekly sales total. It then determines whether the sales are higher.
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/646ac969-7681-4408-bc56-aede3cbba6cc)
+
 
 ### If-else-if statements\
 Imagine you're at school and you just took a test. The teacher is going to give you a grade, and there are 5 different grades you can get: A, B, C, D, or F.
@@ -45,6 +49,8 @@ If your score is not less than 70, the teacher checks if it's less than 80. If i
 If your score is not less than 80, the teacher checks if it's less than 90. If it is, they'll give you a B.
 If your score is not less than 90, the teacher will give you an A.
 This "if-else-if" tool helps the teacher look at all the different possible scores and decide which grade is the right one for you. It's kind of like a big decision tree, with different branches for each possible grade.
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/b6f0dc92-a531-488b-84ff-6d98640f204a)
+
 
 ### Switch statements
 Imagine you're at school and the teacher asks you to tell them your grade. You look at your paper and see you got a letter grade, like an A, B, C, D, or F.
@@ -58,6 +64,9 @@ If the grade is a 'B', 'C', 'D', or 'F', the teacher has different messages for 
 The cool thing is, the teacher only does the message for the one case that matches your grade. They don't have to check all the other cases.
 But what if you put in something weird, like a 'Z'? The teacher has a special "default" case for that, where they can give a message like "I don't understand that grade."
 So the "switch statement" is like a big decision tree that helps the teacher figure out the right message to give you based on your grade. It's a really helpful tool for the teacher!
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/97ac1a2e-5444-44c5-bc6d-277752d514e5)
+
+
 ### Switch Expressions
 Imagine you're at school and the teacher asks you to tell them your grade. You look at your paper and see you got a letter grade, like an A, B, C, D, or F.
 The teacher is going to use a special tool called a "switch expression" to figure out what message to give you based on your grade.
