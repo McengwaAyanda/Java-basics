@@ -58,3 +58,17 @@ If the grade is a 'B', 'C', 'D', or 'F', the teacher has different messages for 
 The cool thing is, the teacher only does the message for the one case that matches your grade. They don't have to check all the other cases.
 But what if you put in something weird, like a 'Z'? The teacher has a special "default" case for that, where they can give a message like "I don't understand that grade."
 So the "switch statement" is like a big decision tree that helps the teacher figure out the right message to give you based on your grade. It's a really helpful tool for the teacher!
+### Switch Expressions
+Imagine you're at school and the teacher asks you to tell them your grade. You look at your paper and see you got a letter grade, like an A, B, C, D, or F.
+The teacher is going to use a special tool called a "switch expression" to figure out what message to give you based on your grade.
+First, the teacher takes the grade you gave them and puts it in a special "grade" box.
+Then, the teacher says, "Okay, let's see what message we should give based on the grade in this box."
+The teacher starts going through a list of different "cases" - one for each possible grade (A, B, C, D, F).
+For example, if the grade in the box is an 'A', the teacher says, "Aha, in the case of an 'A', we'll give the message 'Excellent job!'"
+The cool thing is, the teacher doesn't have to write "message = 'Excellent job!'" - they can just put the message right there in the case.
+If the grade is a 'B', 'C', 'D', or 'F', the teacher has different messages for each of those cases.
+The best part is, the teacher doesn't have to write "break" at the end of each case. The switch expression knows to stop once it finds the right case.
+Another neat thing is, if the teacher wants the same message for two different grades, they can just list the cases together, separated by a comma.
+The teacher can also do more than just assign a message - they can run a whole little program inside each case if they need to.
+So the "switch expression" is like a super-powered version of the regular "switch statement" that the teacher can use to make their job a lot easier. It's a really handy tool!
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/8c81cd83-cb4c-47cd-9367-42a76e46dc92)
