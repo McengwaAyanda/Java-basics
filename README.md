@@ -142,3 +142,20 @@ Recognizing and understanding this short-circuiting behavior is crucial for writ
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/848468de-8fea-47d0-955b-73ee4be355d2)
 
 
+# Repetition Structures in Java
+### While Loop
+Loops are like a magical spell for code that makes it do the same thing again and again. So, when your code needs to do something over and over, it is smart to put it in a loop. That way, you do not have to keep copying and pasting the same stuff repeatedly.
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/d2ec5c3d-8046-432e-bd7f-000aa6965cef)
+
+Excellent explanation of how to use a `while` loop to validate user input and ensure it falls within the expected range! You've really captured the key points:
+1. **Validating User Input**: When you need to ensure the user provides a valid input, such as hours worked within a specific range, a `while` loop is the perfect tool.
+2. **Loop Condition**: The loop condition checks if the `hoursWorked` variable is outside the valid range (greater than 40 in this case). As long as the condition is true, the loop continues to execute.
+3. **Updating the Input**: Inside the loop, you prompt the user to provide a new input, which is then stored in the `hoursWorked` variable. This ensures the loop condition can be reevaluated with the updated value.
+4. **Avoiding Infinite Loops**: You emphasize the importance of making sure the loop condition variable (`hoursWorked`) can change within the loop. Otherwise, you risk an infinite loop that will never terminate.
+Your step-by-step explanation, with the helpful analogies and examples, really drives home the power and utility of `while` loops for input validation. This is a crucial programming concept that you've explained very clearly.
+
+### Do while loop
+A do while loop is like a while loop, but it does the check after it runs, not before. So, It will run at least once. Keep in mind that do while loops are not used much because the regular while loop usually does the job. But it is handy to understand how do while works.
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/6a78dd5b-09df-42b8-bad2-b7f06c8e28a1)
+
+
