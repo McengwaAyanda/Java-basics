@@ -157,5 +157,50 @@ Your step-by-step explanation, with the helpful analogies and examples, really d
 ### Do while loop
 A do while loop is like a while loop, but it does the check after it runs, not before. So, It will run at least once. Keep in mind that do while loops are not used much because the regular while loop usually does the job. But it is handy to understand how do while works.
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/6a78dd5b-09df-42b8-bad2-b7f06c8e28a1)
+The problem at hand requires creating a program that allows the user to input a couple of numbers, calculates their sum, and displays the result. The program will continue running until the user chooses to stop.
+To achieve this, we use a do-while loop. The loop starts with the "do" keyword and a pair of curly braces. Inside the braces, we include all the actions we want the loop to perform. After the braces, we add the "while" keyword and a condition inside parentheses, followed by a semicolon.
+For this specific problem, the condition is based on whether the user wants to run the loop again. We create a variable called "runAgain" and initialize it to 0. If "runAgain" is equal to 1, it indicates the user wants to repeat the loop. Inside the loop, we prompt the user to enter the first and second numbers, which we store as "number1" and "number2". We then calculate the sum and display the result.
+After the calculations, we ask the user if they want to run the loop again. If they enter "1" for "yes," we update the "runAgain" variable accordingly. If they enter "2" for "no," the loop terminates.
+When the program runs, it immediately enters the do-while loop. The user can input numbers, and the loop will continue until the user chooses to stop.
+The key distinction between do-while and regular while loops is that do-while loops execute the code at least once, regardless of the initial condition. This is useful in situations where you want to ensure the loop runs at least once before checking the condition.
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/59c78fad-cccc-473a-ac27-ce9237fbac8c)
 
+### For Loop
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/938abbd8-265c-4123-8d13-4162a4fb3a55)
+The for loop is distinct from other types of loops because it is driven by a counter, rather than a condition. The for loop has a specific number of times it needs to execute its code. This makes it well-suited for situations where you need to perform a task a predetermined number of times.
+For example, imagine you're creating a program for a cashier. The cashier needs to scan a number of items and calculate the total cost. The for loop is an excellent tool for this task, as it allows you to keep precise track of the item count as you tally up the total.
+The structure of the for loop includes three main components:
+The initialization, where you set the starting value of the counter variable.
+The condition, which determines when the loop should stop executing.
+The increment/decrement, which updates the counter variable after each iteration.
+By having this well-defined structure, the for loop ensures that the code inside it runs a specific number of times, making it a powerful and flexible construct for a wide range of programming tasks that require counting or iterating over a known number of items.
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/869b7859-66e3-409a-b357-f11a5ecbe02a)
+### For loop key factors
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/4fa277ba-7bbf-4039-a96d-83acb1c8f327)
+
+### Nested Loops
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/c01cedda-3b0f-474f-90b1-6efce2f88af8)
+
+The outer for loop is used to iterate through each of the 24 students in the class. The loop control variable i is used to keep track of the current student.
+For each student, there is an inner for loop that iterates through the 4 test scores for that student. The loop control variable j is used to keep track of the current test score.
+Inside the inner loop, you:
+Initialize a total variable to 0 to keep track of the sum of the student's test scores.
+Prompt the user to enter the score for the current test (j+1).
+Add the score to the total.
+Once all 4 test scores have been entered, you calculate the average by dividing the total by 4 and print out the result for the current student (i+1).
+The nested loop structure allows you to completely process each student's test scores before moving on to the next student, ensuring you have the necessary information to calculate the individual averages.
+You note that the nested loop technique can be applied using different types of loops (e.g., while loops) depending on the specific requirements of the problem.
+This is an excellent example of how nested loops can be used to tackle complex, multi-faceted problems in a structured and efficient manner. The step-by-step explanation makes it easy to understand the purpose and implementation of the nested loop approach.
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/f8189e61-e441-40c6-928b-0be13b91a04c)
+
+### Break Statements
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/deeaf54f-a361-4994-a8e5-6425b0bbc0b3)
+The program sets up a for loop to iterate through each character in the input text. The loop control variable i is used to keep track of the current position in the text.
+Inside the loop, the current character is retrieved using text.charAt(i) and stored in a variable called currentLetter.
+The program then checks if currentLetter is equal to either an uppercase 'A' or a lowercase 'a'. If so, it sets a flag variable letterFound to true.
+Here's the important part: Once the letter 'A' is found, there's no need to continue searching the rest of the text. So, the program uses the break statement to immediately exit the loop, regardless of whether the loop's normal termination condition has been met.
+By using the break statement, the program can efficiently stop the loop as soon as the desired condition is met, without having to waste time iterating through the remaining characters in the text.
+This is a great example of how the break statement can be a powerful tool for controlling the flow of a loop. It allows you to exit a loop prematurely, which can be especially useful when you've found the information you're looking for and don't need to continue the loop any further.
+The ability to break out of a loop is an important concept in programming, as it gives you more flexibility in handling complex control flow scenarios. The break statement can be used in various types of loops, including for, while, and do-while loops, making it a versatile tool for problem-solving.
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/1b8134a2-0b8c-47e1-975b-e5ffc72a4c8f)
 
