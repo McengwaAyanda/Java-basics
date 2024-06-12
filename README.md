@@ -204,3 +204,125 @@ This is a great example of how the break statement can be a powerful tool for co
 The ability to break out of a loop is an important concept in programming, as it gives you more flexibility in handling complex control flow scenarios. The break statement can be used in various types of loops, including for, while, and do-while loops, making it a versatile tool for problem-solving.
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/1b8134a2-0b8c-47e1-975b-e5ffc72a4c8f)
 
+# Methods in Java
+### Creating Methods
+In Java, methods are akin to tools within a class. They enable us to break down complex problems into smaller, more manageable components. Methods perform specific tasks and help us avoid redundancy in our code. In other programming languages, these constructs may be referred to by different names, such as functions or modules, but in the context of Java, we refer to them as methods.
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/5f766128-4927-4612-8a63-1f897723a111)
+Header: The opening line of the method, which acts as an "ID card" for the method. It includes:
+Access modifier (e.g., public) - determines who can use the method
+Optional modifiers (e.g., static, final)
+Return type (e.g., int) - specifies the type of value the method returns
+Method name (e.g., calculateSum) - should start with a verb and be descriptive
+Parameter list enclosed in parentheses - lists the inputs the method requires
+Signature: The combination of the method's name and its parameter list, which uniquely identifies the method.
+Body: The actual code inside the curly braces that defines the method's functionality.
+Return Statement: If the method has a non-void return type, it must include a return statement at the end to send the result back.
+The key purpose of methods is to break down complex problems into smaller, more manageable parts, and to avoid code duplication by encapsulating specific tasks or calculations. The method header provides information about how to use the method, while the body contains the implementation details.
+
+### Calling Methods
+Okay, let's break down the key points about how to use methods in a Java program:
+1. **Methods don't execute automatically**: Methods need to be explicitly called or "summoned" in order to run their code. They don't spring into action on their own.
+2. **Placing methods within a class**: All methods must be defined within the scope of a class. The order in which the methods are written does not matter, as long as they are properly defined.
+3. **Calling methods from the main method**: When a Java program starts, the execution begins in the `main()` method. From the `main()` method, you can call other methods by using the method's name followed by empty parentheses and a semicolon.
+4. **Example of the `greetUser()` method**: This method likely prompts the user for their name, stores it in a variable, and then prints a greeting using that name. However, this method won't run until it is called from the `main()` method or another method.
+5. **Calling the `greetUser()` method**: To execute the `greetUser()` method, you would write `greetUser();` within the `main()` method or another method. This "summons" the `greetUser()` method and causes it to run its internal code.
+The key takeaway is that methods are like tools or functions that can be called upon to perform specific tasks, but they require explicit invocation from the main program flow (typically the `main()` method) in order to execute. The order of method definitions does not matter, but the order in which they are called is what determines the program's behavior.
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/0c0cfacd-90ef-4882-9ca6-770895e8f6db)
+
+### Variable scope
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/7de58bac-2f17-438e-80b5-b9c985c61d93)
+
+1. **Method Execution**: Methods do not execute automatically - they need to be explicitly called, typically from the `main()` method or another method.
+2. **Method Scope**: All methods must be defined within a class. The order of method definitions does not matter, as long as they are properly structured.
+3. **Variable Scope**:
+   - Local variables: Variables defined within a specific method or block of code. They can only be accessed within their defined scope.
+   - Global (or class-level) variables: Variables defined at the class level, outside of any methods. They can be accessed from anywhere within the class.
+   - Variable name reuse: You can have variables with the same name in different scopes, and they will be treated as separate variables.
+   - Local variable precedence: When a local variable and a global variable have the same name, the local variable takes precedence within its scope.
+   - Accessing global variables: To explicitly access a global variable from within a local scope, you can use the `this` keyword, e.g., `this.myVariable`.
+4. **Variable Scope Considerations**:
+   - Use local variables when the variable is only needed within a limited scope.
+   - Use global variables when the variable needs to be accessed across multiple methods.
+
+### Passing Data to Methods
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/6d952dcd-9ea2-4b44-8d08-c0407f90a140)
+
+Method Parameters:
+Methods can require external data to perform their tasks.
+This data is passed to the method through a list of parameters defined in the method signature.
+Each parameter has a data type and a name, e.g., int creditScore and double salary.
+Accessing External Data:
+The variables defined in the main method (e.g., actualSalary and actualCreditScore) are not directly accessible by the isUserQualified method.
+By including the parameters in the isUserQualified method signature, the method can now access and use the external data.
+Passing Arguments:
+When calling the isUserQualified method from the main method, you pass the arguments (e.g., actualSalary and actualCreditScore) that correspond to the parameters in the method signature.
+The order of the arguments must match the order of the parameters in the method signature.
+Variable Naming:
+The variable names in the main method and the isUserQualified method can be different (e.g., actualSalary vs. salary), as they are in different scopes.
+This demonstrates that the method parameters create a new scope within the method, separate from the scope of the main method.
+This is a great example of how methods can leverage external data through parameters to perform their specific tasks. The parameter list acts as a bridge, allowing the method to access the necessary information from the main program flow.
+
+### Returning Data from methods
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/de2391e4-4cb4-454a-86a1-66f2e2a24d34)
+Methods can perform actions and sometimes return values.
+The isUserQualified method currently doesn't return anything, so it's like a one-way street.
+To make it return a value, we change its return type to boolean. It will return true if the user is qualified, and false otherwise.
+When we call a method that returns a value, we can store that value in a variable. In this case, we'll call the variable qualified.
+The notifyUser method wants a boolean value (a yes or no) when we call it. It will then use that value to determine the appropriate message to display.
+When we run the code, the qualified variable will hold the result from isUserQualified, and notifyUser will use that value to print the correct message, like "Sorry, you have been declined" if qualified is false.
+This flow of passing values between methods is similar to following a flowchart.
+The main idea is to transform the isUserQualified method to return a boolean value, capture that value in a variable, and then use that variable in the notifyUser method to provide the appropriate feedback to the user.
+
+### Overloading Methods
+In a class, you can have multiple methods with the same name but different parameters. This is called method overloading. In the "month" class, there are two "getMonth" methods - one that takes an integer representing the month, and another that takes a string with the month's name. This is perfectly valid, and you can overload as many methods as needed, as long as their parameter lists differ.
+The way the compiler determines which overloaded method to use is by looking at the arguments you pass when calling the method. It will match the provided arguments to the method's parameter list.
+If you try to create overloaded methods with the exact same parameter list, you'll get a compilation error, because the compiler won't be able to differentiate between them.
+For example, adding a third "getMonth" method that takes a string parameter, but with a different parameter name, would still result in an error, because it has the same signature as the second method.
+Overloading methods is a convenient way to provide similar functionality with slight variations, without having to rely on complex conditional logic within a single method. It leads to cleaner, more organized code.
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/2d174d4a-7152-4672-93a8-54cde176aeb8)
+
+# Objects in Java
+### Defining classes for objects
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/b7dfee56-d0e9-433c-9586-2a2442c6b299)
+In programming, objects are like containers that hold both data and actions. You can use these data and actions in different parts of your code by creating an object, similar to how you'd build a blueprint for a rectangle with all its features.
+Thinking of a rectangle as a class, it has characteristics or "fields" that define it, like a length and a width. These fields are the rectangle's identifying properties.
+The actions you can perform on a rectangle, like measuring its perimeter and area, are called "methods". These methods perform the calculations to determine the rectangle's measurements.
+The class itself is just a blueprint - it doesn't have any specific values for the length and width. To use a rectangle, you need to create an instance of the class and set the values for its fields. This is where "getter" and "setter" methods come into play, allowing you to retrieve and modify the rectangle's dimensions.
+In object-oriented programming, there is a concept called "encapsulation", which states that a class's data (fields) should be kept private, while the methods that define its behavior can be made public. This ensures that the internal implementation of the class is hidden and can only be accessed through the provided methods.
+Additionally, there is an "access modifier" called "protected", which allows classes within the same package to access the class's members, similar to having no access modifier at all.
+The rectangle class you're building is like a blueprint - it defines the structure and behavior of a rectangle object, but the specific values for length and width are set when you create an instance of the class.
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/e6673035-2b1c-40cc-931a-156f106b8c89)
+
+### Java Constructors
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/7abea6be-9dea-4d9c-a2c9-98a5ab58e30a)
+In addition to using setter methods, you can also set a class's field values using a constructor. Constructors are a convenient way to give an object its initial values or configure its state when it's created.
+Every object has a constructor, and the default constructor is the most basic type you'll encounter. A default constructor doesn't take any parameters. It's useful when you want to create a new object but don't have the specific values for its fields yet. The default constructor will set some default values for the object's fields.
+In Java, the default constructor is always present, even if you don't explicitly define it. It's an empty constructor that doesn't do much, but it's there as a hidden feature.
+Let's break down the structure of a constructor:
+- It starts with an access modifier like "public"
+- It has the same name as the class it belongs to
+- It doesn't have a return type, even though it acts like a method
+- It may have parameters inside the parentheses, but the default constructor doesn't have any
+- The constructor's body is contained within curly braces
+The purpose of the default constructor is to set default values for the class's fields. In the case of a rectangle, we might set the length and width to zero.
+You can actually have multiple constructors for a class, all with the same name but accepting different parameters. For example, you could create another constructor that takes the length and width as parameters, and then uses the setter methods to assign those values to the fields.
+Having multiple constructors gives you options for how to set up the initial state of an object when it's created, whether you know the specific field values upfront or need to use default values.
+
+### Object Instantiation
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/37b21030-b4a1-4b51-afc8-213bc9b209b2)
+In this scenario, we will create two Rectangle objects to calculate the areas of different rooms. We'll do this within the HomeAreaCalculator class.
+To create a new object, we need to instantiate a class. In this case, we want a "room" object that is based on the Rectangle class. Objects use classes as their data types, so our object type will be Rectangle.
+We'll name the first object "room1". To create it, we use the "new" keyword followed by the class constructor. We'll use the default constructor with no parameters.
+We can access the object's methods using the dot operator. For room1, we'll set the width to 25 and the length to 50, then calculate the area by calling room1.calculateArea().
+Next, we'll create a second room object called "room2". This time, we'll use the constructor that takes length and width parameters, passing in values of 30 and 75.
+The Rectangle class serves as a reusable blueprint that we can use to model different types of rectangles, in this case representing rooms in a house. The class itself doesn't care how we use it - it simply provides the structure and functionality we need.
+
+### Method parameters as objects
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/6402dbd4-db0f-4e87-a156-0b349848060d)
+Objects can be used as method arguments, just like primitive data types. For example, we have two Rectangle objects representing rooms - a kitchen and a bathroom. We created these objects by calling the Rectangle constructor and providing the length and width values.
+To calculate the total area of these two rooms, we create a method called calculateTotalArea. This method returns a double and takes two Rectangle objects as input parameters. We declare it as public static double calculateTotalArea(Rectangle rectangle1, Rectangle rectangle2).
+Inside the calculateTotalArea method, we use the dot operator to call the calculateArea() method on each of the Rectangle objects passed in as arguments. We then return the sum of their areas: return rectangle1.calculateArea() + rectangle2.calculateArea().
+In our main method, we call the calculateTotalArea method, passing in the kitchen and bathroom Rectangle objects as arguments, like this: double totalArea = calculateTotalArea(kitchen, bathroom).
+Finally, we print the total area with a message like "The total area is [totalArea]".
+
+
