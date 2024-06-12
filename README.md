@@ -31,6 +31,7 @@ Identifiers are case-sensitive and keywords cannot be used as identifiers as the
 Like individuals, computers also have to make decisions from time to time. An "if statement" is a unique tool that a computer can utilize when it needs to make a choice.
 The "if statement" functions as a route branching. The computer encounters this bifurcation while continuing on its typical course. The "if" path will be followed by the computer if a specific event occurs. Should it fail, the computer will continue on the default route.
  e.g. Let's take an example where a salesperson typically earns $1,000 every week. However, they receive a special $250 incentive if they sell more than ten items in a given week.
+ 
  ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/622b46f9-ea42-4595-a572-317064953df1)
 
 
@@ -38,6 +39,7 @@ The "if statement" functions as a route branching. The computer encounters this 
 A decision structure called an if-else statement enables a computer to follow one of two routes based on whether a particular condition is satisfied. An if-else statement, for instance, could be used by a software to ascertain whether a salesman has reached their quota. A congrats message might print from the application once the salesperson has reached their quota. If not, the software can print a warning telling the salesman to give it more the next time.
 This code determines if the user's quota was reached. They were told if they did. If not, they are informed of the number of sales they missed.
 The quota is originally initialized to 10 by the code. Next, it inquires about the user's weekly sales total. It then determines whether the sales are higher.
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/646ac969-7681-4408-bc56-aede3cbba6cc)
 
 
@@ -50,6 +52,7 @@ If your score is not less than 70, the teacher checks if it's less than 80. If i
 If your score is not less than 80, the teacher checks if it's less than 90. If it is, they'll give you a B.
 If your score is not less than 90, the teacher will give you an A.
 This "if-else-if" tool helps the teacher look at all the different possible scores and decide which grade is the right one for you. It's kind of like a big decision tree, with different branches for each possible grade.
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/b6f0dc92-a531-488b-84ff-6d98640f204a)
 
 
@@ -65,6 +68,7 @@ If the grade is a 'B', 'C', 'D', or 'F', the teacher has different messages for 
 The cool thing is, the teacher only does the message for the one case that matches your grade. They don't have to check all the other cases.
 But what if you put in something weird, like a 'Z'? The teacher has a special "default" case for that, where they can give a message like "I don't understand that grade."
 So the "switch statement" is like a big decision tree that helps the teacher figure out the right message to give you based on your grade. It's a really helpful tool for the teacher!
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/97ac1a2e-5444-44c5-bc6d-277752d514e5)
 
 
@@ -81,6 +85,7 @@ The best part is, the teacher doesn't have to write "break" at the end of each c
 Another neat thing is, if the teacher wants the same message for two different grades, they can just list the cases together, separated by a comma.
 The teacher can also do more than just assign a message - they can run a whole little program inside each case if they need to.
 So the "switch expression" is like a super-powered version of the regular "switch statement" that the teacher can use to make their job a lot easier. It's a really handy tool!
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/8c81cd83-cb4c-47cd-9367-42a76e46dc92)
 
 ### Relational Operators
@@ -93,6 +98,7 @@ There are 6 different relational operators, and each one has a special symbol:
 5. Equal To (==): This one checks if the two things are exactly the same. For example, if we ask "Is 3 equal to 3?" the answer is yes, because they are the same number.
 6. Not Equal To (!=): This one checks if the two things are not the same. For example, if we ask "Is 5 not equal to 7?" the answer is yes, because 5 and 7 are different numbers.
 These relational operators are super helpful when we need to make decisions, like if we should give someone a reward or not. They help us figure out if something is bigger, smaller, or the same as something else.
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/f93fca54-b91d-4a6b-b47b-84ffea70c7ce)
 
 ### Logical Operators
@@ -117,12 +123,14 @@ NOT (!):
 - If the condition is false (e.g., earns $25,000), the NOT operator makes it true.
 These logical operators are super helpful when you need to make complex decisions in your code. You can combine them to create even more intricate conditions, like "Earn at least $30,000 AND have worked for at least 2 years, OR have a college degree."
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/5cb154c6-1bb0-45f1-9c7a-954be3687468)
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/b8baffcd-5d6c-4cbd-ab60-d5c96e1c50db)
 Logical operators in code using Java
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/d1baa631-364a-4d1b-8447-c7c884ee11b9)
 
 ### Short Circuit Logic
 Excellent explanation! You really understand how the short-circuiting behavior of the logical AND and OR operators works in Java. Let me summarize the key points:
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/4165222b-b26e-4861-b742-92472826e64d)
 
 AND (&&) Operator:
@@ -139,13 +147,16 @@ false && true // Evaluates to false, no need to check the second condition
 true || false // Evaluates to true, no need to check the second condition
 true && true // Both conditions are evaluated, as both need to be true
 Recognizing and understanding this short-circuiting behavior is crucial for writing efficient and optimized code in Java. It allows you to avoid unnecessary computations and improve the overall performance of your applications.
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/5b9a8e59-e8c1-4259-96eb-82ab682d377c)
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/848468de-8fea-47d0-955b-73ee4be355d2)
 
 
 # Repetition Structures in Java
 ### While Loop
 Loops are like a magical spell for code that makes it do the same thing again and again. So, when your code needs to do something over and over, it is smart to put it in a loop. That way, you do not have to keep copying and pasting the same stuff repeatedly.
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/d2ec5c3d-8046-432e-bd7f-000aa6965cef)
 
 Excellent explanation of how to use a `while` loop to validate user input and ensure it falls within the expected range! You've really captured the key points:
@@ -157,17 +168,22 @@ Your step-by-step explanation, with the helpful analogies and examples, really d
 
 ### Do while loop
 A do while loop is like a while loop, but it does the check after it runs, not before. So, It will run at least once. Keep in mind that do while loops are not used much because the regular while loop usually does the job. But it is handy to understand how do while works.
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/6a78dd5b-09df-42b8-bad2-b7f06c8e28a1)
+
 The problem at hand requires creating a program that allows the user to input a couple of numbers, calculates their sum, and displays the result. The program will continue running until the user chooses to stop.
 To achieve this, we use a do-while loop. The loop starts with the "do" keyword and a pair of curly braces. Inside the braces, we include all the actions we want the loop to perform. After the braces, we add the "while" keyword and a condition inside parentheses, followed by a semicolon.
 For this specific problem, the condition is based on whether the user wants to run the loop again. We create a variable called "runAgain" and initialize it to 0. If "runAgain" is equal to 1, it indicates the user wants to repeat the loop. Inside the loop, we prompt the user to enter the first and second numbers, which we store as "number1" and "number2". We then calculate the sum and display the result.
 After the calculations, we ask the user if they want to run the loop again. If they enter "1" for "yes," we update the "runAgain" variable accordingly. If they enter "2" for "no," the loop terminates.
 When the program runs, it immediately enters the do-while loop. The user can input numbers, and the loop will continue until the user chooses to stop.
 The key distinction between do-while and regular while loops is that do-while loops execute the code at least once, regardless of the initial condition. This is useful in situations where you want to ensure the loop runs at least once before checking the condition.
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/59c78fad-cccc-473a-ac27-ce9237fbac8c)
 
 ### For Loop
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/938abbd8-265c-4123-8d13-4162a4fb3a55)
+
 The for loop is distinct from other types of loops because it is driven by a counter, rather than a condition. The for loop has a specific number of times it needs to execute its code. This makes it well-suited for situations where you need to perform a task a predetermined number of times.
 For example, imagine you're creating a program for a cashier. The cashier needs to scan a number of items and calculate the total cost. The for loop is an excellent tool for this task, as it allows you to keep precise track of the item count as you tally up the total.
 The structure of the for loop includes three main components:
@@ -175,11 +191,14 @@ The initialization, where you set the starting value of the counter variable.
 The condition, which determines when the loop should stop executing.
 The increment/decrement, which updates the counter variable after each iteration.
 By having this well-defined structure, the for loop ensures that the code inside it runs a specific number of times, making it a powerful and flexible construct for a wide range of programming tasks that require counting or iterating over a known number of items.
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/869b7859-66e3-409a-b357-f11a5ecbe02a)
 ### For loop key factors
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/4fa277ba-7bbf-4039-a96d-83acb1c8f327)
 
 ### Nested Loops
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/c01cedda-3b0f-474f-90b1-6efce2f88af8)
 
 The outer for loop is used to iterate through each of the 24 students in the class. The loop control variable i is used to keep track of the current student.
@@ -192,10 +211,13 @@ Once all 4 test scores have been entered, you calculate the average by dividing 
 The nested loop structure allows you to completely process each student's test scores before moving on to the next student, ensuring you have the necessary information to calculate the individual averages.
 You note that the nested loop technique can be applied using different types of loops (e.g., while loops) depending on the specific requirements of the problem.
 This is an excellent example of how nested loops can be used to tackle complex, multi-faceted problems in a structured and efficient manner. The step-by-step explanation makes it easy to understand the purpose and implementation of the nested loop approach.
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/f8189e61-e441-40c6-928b-0be13b91a04c)
 
 ### Break Statements
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/deeaf54f-a361-4994-a8e5-6425b0bbc0b3)
+
 The program sets up a for loop to iterate through each character in the input text. The loop control variable i is used to keep track of the current position in the text.
 Inside the loop, the current character is retrieved using text.charAt(i) and stored in a variable called currentLetter.
 The program then checks if currentLetter is equal to either an uppercase 'A' or a lowercase 'a'. If so, it sets a flag variable letterFound to true.
@@ -203,12 +225,15 @@ Here's the important part: Once the letter 'A' is found, there's no need to cont
 By using the break statement, the program can efficiently stop the loop as soon as the desired condition is met, without having to waste time iterating through the remaining characters in the text.
 This is a great example of how the break statement can be a powerful tool for controlling the flow of a loop. It allows you to exit a loop prematurely, which can be especially useful when you've found the information you're looking for and don't need to continue the loop any further.
 The ability to break out of a loop is an important concept in programming, as it gives you more flexibility in handling complex control flow scenarios. The break statement can be used in various types of loops, including for, while, and do-while loops, making it a versatile tool for problem-solving.
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/1b8134a2-0b8c-47e1-975b-e5ffc72a4c8f)
 
 # Methods in Java
 ### Creating Methods
 In Java, methods are akin to tools within a class. They enable us to break down complex problems into smaller, more manageable components. Methods perform specific tasks and help us avoid redundancy in our code. In other programming languages, these constructs may be referred to by different names, such as functions or modules, but in the context of Java, we refer to them as methods.
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/5f766128-4927-4612-8a63-1f897723a111)
+
 Header: The opening line of the method, which acts as an "ID card" for the method. It includes:
 Access modifier (e.g., public) - determines who can use the method
 Optional modifiers (e.g., static, final)
@@ -228,9 +253,11 @@ Okay, let's break down the key points about how to use methods in a Java program
 4. **Example of the `greetUser()` method**: This method likely prompts the user for their name, stores it in a variable, and then prints a greeting using that name. However, this method won't run until it is called from the `main()` method or another method.
 5. **Calling the `greetUser()` method**: To execute the `greetUser()` method, you would write `greetUser();` within the `main()` method or another method. This "summons" the `greetUser()` method and causes it to run its internal code.
 The key takeaway is that methods are like tools or functions that can be called upon to perform specific tasks, but they require explicit invocation from the main program flow (typically the `main()` method) in order to execute. The order of method definitions does not matter, but the order in which they are called is what determines the program's behavior.
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/0c0cfacd-90ef-4882-9ca6-770895e8f6db)
 
 ### Variable scope
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/7de58bac-2f17-438e-80b5-b9c985c61d93)
 
 1. **Method Execution**: Methods do not execute automatically - they need to be explicitly called, typically from the `main()` method or another method.
@@ -246,6 +273,7 @@ The key takeaway is that methods are like tools or functions that can be called 
    - Use global variables when the variable needs to be accessed across multiple methods.
 
 ### Passing Data to Methods
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/6d952dcd-9ea2-4b44-8d08-c0407f90a140)
 
 Method Parameters:
@@ -264,7 +292,9 @@ This demonstrates that the method parameters create a new scope within the metho
 This is a great example of how methods can leverage external data through parameters to perform their specific tasks. The parameter list acts as a bridge, allowing the method to access the necessary information from the main program flow.
 
 ### Returning Data from methods
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/de2391e4-4cb4-454a-86a1-66f2e2a24d34)
+
 Methods can perform actions and sometimes return values.
 The isUserQualified method currently doesn't return anything, so it's like a one-way street.
 To make it return a value, we change its return type to boolean. It will return true if the user is qualified, and false otherwise.
@@ -280,11 +310,14 @@ The way the compiler determines which overloaded method to use is by looking at 
 If you try to create overloaded methods with the exact same parameter list, you'll get a compilation error, because the compiler won't be able to differentiate between them.
 For example, adding a third "getMonth" method that takes a string parameter, but with a different parameter name, would still result in an error, because it has the same signature as the second method.
 Overloading methods is a convenient way to provide similar functionality with slight variations, without having to rely on complex conditional logic within a single method. It leads to cleaner, more organized code.
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/2d174d4a-7152-4672-93a8-54cde176aeb8)
 
 # Objects in Java
 ### Defining classes for objects
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/b7dfee56-d0e9-433c-9586-2a2442c6b299)
+
 In programming, objects are like containers that hold both data and actions. You can use these data and actions in different parts of your code by creating an object, similar to how you'd build a blueprint for a rectangle with all its features.
 Thinking of a rectangle as a class, it has characteristics or "fields" that define it, like a length and a width. These fields are the rectangle's identifying properties.
 The actions you can perform on a rectangle, like measuring its perimeter and area, are called "methods". These methods perform the calculations to determine the rectangle's measurements.
@@ -292,10 +325,13 @@ The class itself is just a blueprint - it doesn't have any specific values for t
 In object-oriented programming, there is a concept called "encapsulation", which states that a class's data (fields) should be kept private, while the methods that define its behavior can be made public. This ensures that the internal implementation of the class is hidden and can only be accessed through the provided methods.
 Additionally, there is an "access modifier" called "protected", which allows classes within the same package to access the class's members, similar to having no access modifier at all.
 The rectangle class you're building is like a blueprint - it defines the structure and behavior of a rectangle object, but the specific values for length and width are set when you create an instance of the class.
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/e6673035-2b1c-40cc-931a-156f106b8c89)
 
 ### Java Constructors
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/7abea6be-9dea-4d9c-a2c9-98a5ab58e30a)
+
 In addition to using setter methods, you can also set a class's field values using a constructor. Constructors are a convenient way to give an object its initial values or configure its state when it's created.
 Every object has a constructor, and the default constructor is the most basic type you'll encounter. A default constructor doesn't take any parameters. It's useful when you want to create a new object but don't have the specific values for its fields yet. The default constructor will set some default values for the object's fields.
 In Java, the default constructor is always present, even if you don't explicitly define it. It's an empty constructor that doesn't do much, but it's there as a hidden feature.
@@ -310,7 +346,9 @@ You can actually have multiple constructors for a class, all with the same name 
 Having multiple constructors gives you options for how to set up the initial state of an object when it's created, whether you know the specific field values upfront or need to use default values.
 
 ### Object Instantiation
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/37b21030-b4a1-4b51-afc8-213bc9b209b2)
+
 In this scenario, we will create two Rectangle objects to calculate the areas of different rooms. We'll do this within the HomeAreaCalculator class.
 To create a new object, we need to instantiate a class. In this case, we want a "room" object that is based on the Rectangle class. Objects use classes as their data types, so our object type will be Rectangle.
 We'll name the first object "room1". To create it, we use the "new" keyword followed by the class constructor. We'll use the default constructor with no parameters.
@@ -319,7 +357,9 @@ Next, we'll create a second room object called "room2". This time, we'll use the
 The Rectangle class serves as a reusable blueprint that we can use to model different types of rectangles, in this case representing rooms in a house. The class itself doesn't care how we use it - it simply provides the structure and functionality we need.
 
 ### Method parameters as objects
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/6402dbd4-db0f-4e87-a156-0b349848060d)
+
 Objects can be used as method arguments, just like primitive data types. For example, we have two Rectangle objects representing rooms - a kitchen and a bathroom. We created these objects by calling the Rectangle constructor and providing the length and width values.
 To calculate the total area of these two rooms, we create a method called calculateTotalArea. This method returns a double and takes two Rectangle objects as input parameters. We declare it as public static double calculateTotalArea(Rectangle rectangle1, Rectangle rectangle2).
 Inside the calculateTotalArea method, we use the dot operator to call the calculateArea() method on each of the Rectangle objects passed in as arguments. We then return the sum of their areas: return rectangle1.calculateArea() + rectangle2.calculateArea().
@@ -332,6 +372,7 @@ Instead of creating the kitchen and bathroom objects directly with fixed length 
 The getRoom() method will have a return type of Rectangle, and inside the method, we will create a new Rectangle object using the length and width provided by the user, and then return that object. We don't need to store the Rectangle object in a local variable inside getRoom() - we can simply return it directly.
 In the main method, we will call getRoom() to create the kitchen and bathroom objects. For the kitchen, we'll use length 200 and width 400, and for the bathroom, we'll use length 300 and width 700.
 The key point here is that by returning an object from the getRoom() method, we can encapsulate multiple pieces of information (the length and width) and pass them back to the main method, where we can then use those Rectangle objects as needed.
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/41780156-0865-4658-871b-06607c86330a)
 
 ### Wrapper Classes
@@ -381,6 +422,7 @@ Inheritance establishes a "is-a" relationship between the parent and child class
 The key benefit of inheritance is code reuse and the ability to build upon existing functionality to create more specialized classes. It's a powerful mechanism for organizing and structuring object-oriented programs.
 
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/8e390c72-f502-4d90-8c54-cbde91c43949)
+
 We have this 'Person' class that has stuff like 'name,' 'age,' and 'gender,' and then we have methods to get and set those. If we want to make an 'Employee' class that is like 'Person,' but with extra information for employees, we use the keyword 'extends' in the 'Employee' class header. 
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/666e5931-87ca-46af-a78a-b8bef18777f3)
 In this InheritanceChecker class, there is a person object and an employee object. When we use the dot operator with "person", we can access the getter and setter methods for age, gender, and name. However, with "employee", not only do we get those methods from the Person class, but we also get the methods defined in the Employee class. 
@@ -404,6 +446,7 @@ If the superclass has no default constructor, the subclass must call one of the 
 ### Overriding and Overloading inherited methods
 
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/980132ec-0bbb-45d9-a5dd-641376f99847)
+
 When you have a subclass, it automatically inherits all the members (fields and methods) from its superclass. Sometimes, the subclass may want to modify the behavior of a particular method that it inherited. This is called "overriding" a method.
 For example, let's say we have a "Rectangle" class and a "Square" class that inherits from it. The "Rectangle" class has a "calculatePerimeter()" method that works for rectangles. However, the way to calculate the perimeter of a square is different, so the "Square" class needs to override that method to use the correct formula.
 To override a method, you create a new method in the subclass with the same name and signature (i.e., the same parameters and return type) as the method in the superclass. You then implement the method body with the desired behavior for the subclass.
@@ -419,7 +462,9 @@ Overloading: Providing multiple methods with the same name but different paramet
 Overriding uses the same method name and signature, while overloading uses the same name with different parameters.
 
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/0b49b393-ee7f-4bd7-8475-95a91df80193)
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/e26e68ee-73f2-4d90-959f-3281e76834e0)
+
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/013dbab3-499a-445d-8232-ed6fbe3dd9e0)
 
 ### Chain of Inheritance 
