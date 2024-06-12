@@ -1,4 +1,5 @@
 # Java-basics
+# Module 1 - Introduction to Java
 fundamentals of java for beginners
 
 Java program is an object-oriented programming language, that means java is the collection of objects, and these objects communicate thhrough method callss to each other to work together.
@@ -325,4 +326,100 @@ Inside the calculateTotalArea method, we use the dot operator to call the calcul
 In our main method, we call the calculateTotalArea method, passing in the kitchen and bathroom Rectangle objects as arguments, like this: double totalArea = calculateTotalArea(kitchen, bathroom).
 Finally, we print the total area with a message like "The total area is [totalArea]".
 
+### Method Return Types
+Imagine we want to create a method that returns both the length and width of a rectangle. However, methods can only return one thing at a time. To work around this, we can make the method return an object that encapsulates both the length and width.
+Instead of creating the kitchen and bathroom objects directly with fixed length and width values, we will use a new method called getRoom(). This method will ask the user for the length and width, and then it will create and return a new Rectangle object with those dimensions.
+The getRoom() method will have a return type of Rectangle, and inside the method, we will create a new Rectangle object using the length and width provided by the user, and then return that object. We don't need to store the Rectangle object in a local variable inside getRoom() - we can simply return it directly.
+In the main method, we will call getRoom() to create the kitchen and bathroom objects. For the kitchen, we'll use length 200 and width 400, and for the bathroom, we'll use length 300 and width 700.
+The key point here is that by returning an object from the getRoom() method, we can encapsulate multiple pieces of information (the length and width) and pass them back to the main method, where we can then use those Rectangle objects as needed.
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/41780156-0865-4658-871b-06607c86330a)
 
+### Wrapper Classes
+
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/735ed11c-f1a8-4faf-bf01-4b098358e5c3)
+
+Wrapper classes provide a way to turn primitive data types into objects. For example, we have two variables: number1 (an int primitive) and number2 (an Integer object, which is the wrapper class for the int type).
+The benefit of using wrapper classes like Integer is that they provide a variety of useful methods and properties that are not available with the primitive data types. These wrapper classes exist for all the basic data types in Java.
+Let's look at the Integer wrapper class in more detail. It acts as a toolbox for working with integer values. It provides constants like MIN_VALUE and MAX_VALUE that tell you the smallest and largest possible int values. It also has methods like compare() and compareTo() that help you compare integer values.
+Additionally, the Integer class has conversion methods like doubleValue() and floatValue() that let you convert an Integer object to other numeric data types. One particularly useful method is parseInt(), which can convert a string of numbers into an actual int value.
+If you ever need to take a primitive int variable and turn it into an Integer object, you can use the valueOf() method. Similar wrapper class capabilities exist for the other primitive data types in Java as well.
+The key benefit of wrapper classes is that they extend the functionality of primitive data types by providing a richer set of methods and properties to work with.
+
+### Records
+
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/9b00ab22-abb3-4b75-bfd1-7db8d3629ba7)
+
+Records are a new feature in Java that provide a simpler way to create simple data-carrying objects, similar to Java classes. Instead of defining a full class with fields, getters, setters, and other methods, you can use a record to quickly define an object with just the necessary fields.
+To create a record, you use the record keyword instead of class, and you list the fields inside parentheses, just like in a constructor. The record automatically generates the necessary getter methods for those fields, so you don't have to write them yourself.
+You can also add your own custom methods inside the curly braces of the record definition, if needed. This allows you to add additional functionality beyond just the basic fields.
+Creating instances of a record is very similar to creating instances of a class. You use the new keyword followed by the record name, and pass in the necessary field values through the constructor.
+The key difference with records is that they are immutable - once you create a record instance and set its field values, those values cannot be changed. Records don't have setter methods like classes do.
+Records are particularly useful for creating simple "plain old Java objects" (POJOs) - basic data-carrying objects where you just need to store and access some values. The record syntax provides a more concise and streamlined way to define these types of simple objects, compared to writing a full class.
+In summary, records offer a lightweight alternative to classes when you need to model simple data-centric objects, providing automatic generation of common methods while enforcing immutability.
+
+# Module 2 - Java Fundamentals
+### topics covered:
+Inheritance, Polymorphism, Abstraction, Interfaces, Data Structures, Functional-programming, Exception handling
+
+### Inheritance
+
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/c1dff0db-a9d5-479a-9eec-40f540e66bbe)
+
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/34004df6-4c12-4fae-a678-9b445f8447cc)
+
+
+Inheritance is a fundamental concept in object-oriented programming where a new class acquires the properties and behaviors of an existing class. It creates a hierarchical relationship between the classes involved.
+
+In an inheritance relationship, there are two main participants:
+
+The parent class (also called the superclass or base class): This is the existing class that provides the attributes and methods to be inherited.
+The child class (also called the subclass or derived class): This is the new class that inherits from the parent class. It gains access to all the public and protected members of the parent class.
+The child class essentially becomes an extension of the parent class, inheriting all its characteristics. This allows the child class to reuse the code and functionality of the parent class, without having to reimplement it from scratch.
+
+Inheritance establishes a "is-a" relationship between the parent and child classes. For example, if "Vehicle" is the parent class, a "Car" class that inherits from it would be considered a type of Vehicle.
+
+The key benefit of inheritance is code reuse and the ability to build upon existing functionality to create more specialized classes. It's a powerful mechanism for organizing and structuring object-oriented programs.
+
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/8e390c72-f502-4d90-8c54-cbde91c43949)
+We have this 'Person' class that has stuff like 'name,' 'age,' and 'gender,' and then we have methods to get and set those. If we want to make an 'Employee' class that is like 'Person,' but with extra information for employees, we use the keyword 'extends' in the 'Employee' class header. 
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/666e5931-87ca-46af-a78a-b8bef18777f3)
+In this InheritanceChecker class, there is a person object and an employee object. When we use the dot operator with "person", we can access the getter and setter methods for age, gender, and name. However, with "employee", not only do we get those methods from the Person class, but we also get the methods defined in the Employee class. 
+
+### Constructors in inhertance
+
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/e02de8cc-2aca-40cc-b4ac-6adcb44a082f)
+
+When dealing with constructors and inheritance, there are some important considerations to keep in mind.
+Suppose you have a 'Person' class with a default constructor that prints "in-person default constructor", and an 'Employee' class that inherits from 'Person' and has a default constructor that prints "in-employee default constructor". When you create a new instance of the 'Employee' class, the constructor of the 'Person' superclass is called first, and then the 'Employee' subclass constructor is executed.
+This happens because when a class inherits from another, the superclass constructor needs to be properly initialized before the subclass can use it. The subclass constructor doesn't explicitly call the superclass constructor, but the Java runtime ensures the superclass is set up first.
+If you want to call a specific constructor in the superclass, you can do so using the super() keyword in the subclass constructor. This must be the very first statement in the subclass constructor, as Java requires the superclass to be initialized before the subclass can do anything else.
+For example, if the 'Person' class has a constructor that takes a name parameter, you can call that constructor from the 'Employee' class using super(name). This allows you to choose which superclass constructor to use, rather than relying on the default.
+Furthermore, if the superclass doesn't have a default constructor, the subclass must explicitly call one of the superclass's other constructors using super(). If you don't do this, the Java compiler will throw an error.
+
+Superclass constructors are called before subclass constructors, by default.
+You can explicitly call a specific superclass constructor using super().
+The super() call must be the first statement in the subclass constructor.
+If the superclass has no default constructor, the subclass must call one of the superclass's other constructors.
+
+### Overriding and Overloading inherited methods
+
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/980132ec-0bbb-45d9-a5dd-641376f99847)
+When you have a subclass, it automatically inherits all the members (fields and methods) from its superclass. Sometimes, the subclass may want to modify the behavior of a particular method that it inherited. This is called "overriding" a method.
+For example, let's say we have a "Rectangle" class and a "Square" class that inherits from it. The "Rectangle" class has a "calculatePerimeter()" method that works for rectangles. However, the way to calculate the perimeter of a square is different, so the "Square" class needs to override that method to use the correct formula.
+To override a method, you create a new method in the subclass with the same name and signature (i.e., the same parameters and return type) as the method in the superclass. You then implement the method body with the desired behavior for the subclass.
+The subclass can access any protected or public members (fields and methods) from the superclass, so it can use those in the overridden method.
+It's a good practice to use the "@Override" annotation when overriding a method. This tells Java that you're intentionally replacing the superclass method, which helps avoid mistakes.
+Another concept is "method overloading," which is when a class has multiple methods with the same name but different parameters. This is different from overriding, where you're modifying the behavior of an inherited method.
+For example, in the "Rectangle" class, you might have a "print()" method that simply prints "I am a rectangle." In the "Square" class, you could have a different "print()" method that takes a string parameter and prints "I am a [what]."
+When you call the "print()" method on an object of the "Square" class, Java will choose the appropriate overloaded version based on the arguments you provide.
+
+In summary:
+Overriding: Modifying the behavior of an inherited method by providing a new implementation in the subclass.
+Overloading: Providing multiple methods with the same name but different parameters in the same class.
+Overriding uses the same method name and signature, while overloading uses the same name with different parameters.
+
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/0b49b393-ee7f-4bd7-8475-95a91df80193)
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/e26e68ee-73f2-4d90-959f-3281e76834e0)
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/013dbab3-499a-445d-8232-ed6fbe3dd9e0)
+
+### Chain of Inheritance 
