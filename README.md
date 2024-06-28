@@ -468,3 +468,5 @@ Overriding uses the same method name and signature, while overloading uses the s
 ![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/013dbab3-499a-445d-8232-ed6fbe3dd9e0)
 
 ### Chain of Inheritance 
+![image](https://github.com/McengwaAyanda/Java-basics/assets/81769629/6f538028-dfd2-44dd-b5a6-337cb426976f)
+
